@@ -15,3 +15,7 @@ This data set consists of Placement data of students in a XYZ campus. It include
 3) Which degree specialization is much demanded by corporate?
 
 4) Play with the data conducting all statistical tests.
+
+It was an Kaggle Dataset for learners.
+
+For more information, please visit https://www.kaggle.com/benroshan/factors-affecting-campus-placement
