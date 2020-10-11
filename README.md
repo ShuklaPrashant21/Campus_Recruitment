@@ -14,9 +14,11 @@ This data set consists of Placement data of students in a XYZ campus. It include
 
 4) Play with the data conducting all statistical tests.
 
-#### Explanatory Data Analysis to find academic and Employability Factors influencing placement. 
+#### Notebook involves ?
 
-#### Model Development to predict salary using Linear Regression and Random Forest Techniques.
+1) Explanatory Data Analysis to find academic and Employability Factors influencing placement. 
+
+2) Model Development to predict salary using Linear Regression and Random Forest Techniques.
 
 It was an Kaggle Dataset for learners.
 
