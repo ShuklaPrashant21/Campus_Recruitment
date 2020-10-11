@@ -1,7 +1,5 @@
-## Campus Recruitment
-
-Academic and Employability Factors influencing placement
-
+## Campus Recruitment Data
+ 
 #### What is in it?
 
 This data set consists of Placement data of students in a XYZ campus. It includes secondary and higher secondary school percentage and specialization. It also includes degree specialization, type and Work experience and salary offers to the placed students.
@@ -15,6 +13,10 @@ This data set consists of Placement data of students in a XYZ campus. It include
 3) Which degree specialization is much demanded by corporate?
 
 4) Play with the data conducting all statistical tests.
+
+#### Explanatory Data Analysis to find academic and Employability Factors influencing placement. 
+
+#### Model Development to predict salary using Linear Regression and Random Forest Techniques.
 
 It was an Kaggle Dataset for learners.
 
