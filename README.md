@@ -20,6 +20,8 @@ This data set consists of Placement data of students in a XYZ campus. It include
 
 2) Model Development to predict salary using Linear Regression and Random Forest Techniques.
 
+3) Model Development to predict placement status using Gaussian Naive Bayes.
+
 It was an Kaggle Dataset for learners.
 
 For more information, please visit https://www.kaggle.com/benroshan/factors-affecting-campus-placement
