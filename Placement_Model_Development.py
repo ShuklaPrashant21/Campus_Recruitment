@@ -1,5 +1,4 @@
 ## Import necessary library for analysis
-
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -86,13 +85,12 @@ X.drop(df_final[X_features], axis=1, inplace=True)
 
 y = df_final['status']
 
-## Supervised learning
+## Supervised learning :- Gaussian Naive Bayes classifier
 ### Model validation via cross-validation :- Two Fold
 
-## Gaussian naive Bayes is often a good model to use as a baseline classification
 from sklearn.model_selection import train_test_split
 
-X1, X2, y1, y2 = train_test_split(X, y, test_size=0.3, random_state=5)  ## DIvide data with 50%
+X1, X2, y1, y2 = train_test_split(X, y, test_size=0.3, random_state=5)  ## Divide data 
 print(X1.shape, X2.shape, y1.shape, y2.shape)
 
 from sklearn.naive_bayes import GaussianNB       # 1. choose model class
@@ -109,7 +107,6 @@ accuracy_score(y1, y1_model), accuracy_score(y2, y2_model)
 
 
 ## Visualization of five-fold cross-validation
-## Demonstrates how to estimate the accuracy of a linear kernel support vector machine on the iris dataset by splitting the data, fitting a model and computing the score 5 consecutive times (with different splits each time):
 
 from sklearn.model_selection import cross_val_score
 score1 = cross_val_score(model, X, y, cv=5)
@@ -117,16 +114,21 @@ score1
 
 print('The mean score and standard deviation of model prediction is', (score1.mean(), score1.std() * 2))
 
-## Unsupervised learning example: 
+## Logistic Regression
 
-## Use principal component analysis
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LogisticRegression
 
-from sklearn.decomposition import PCA                      # 1. Choose the model class
-model = PCA(n_components=2)                                # 2. Instantiate the model with hyperparameters
-model.fit(X)                                            # 3. Fit to data. Notice y is not specified!
-X_2D = model.transform(X)                               # 4. Transform the data to two dimensions
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.30, random_state=5)
+logmodel = LogisticRegression()
 
-df['PCA1'] = X_2D[:, 0]
-df['PCA2'] = X_2D[:, 1]
+## Fit training data into model to make prediction further.
+logmodel.fit(X_train,y_train)
+predictions = logmodel.predict(X_test)
 
-sns.lmplot("PCA1", "PCA2", hue='status', data=df, fit_reg=False)
+from sklearn.metrics import classification_report
+print(classification_report(y_test,predictions))
+
+## Create confusion matrix to visualize accuracy of model
+from sklearn.metrics import confusion_matrix
+confusion_matrix(y_test,predictions)
