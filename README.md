@@ -18,9 +18,11 @@ This data set consists of Placement data of students in a XYZ campus. It include
 
 1) Explanatory Data Analysis to find academic and Employability Factors influencing placement. 
 
-2) Model Development to predict salary using Linear Regression and Random Forest Techniques.
+### Prediction Model 
 
-3) Model Development to predict placement status using Gaussian Naive Bayes.
+1) Model Development to predict salary using Linear Regression and Random Forest Regressor Techniques.
+
+2) Model Development to predict placement status using Gaussian Naive Bayes Classifier and Logistic Regression.
 
 It was an Kaggle Dataset for learners.
 
